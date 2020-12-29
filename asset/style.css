@@ -217,17 +217,17 @@ header figure {
   font-weight: 300;
   margin: 8px 16px 0 16px;
 }
+.restaurant .restaurant__card .heartBox:hover .far {
+  opacity: 0;
+}
+.restaurant .restaurant__card .heartBox:hover .fas {
+  display: block;
+}
 .restaurant .restaurant__card .far {
   font-size: 20px;
   position: absolute;
   right: 16px;
   bottom: 45px;
-}
-.restaurant .restaurant__card .far:hover {
-  opacity: 0;
-}
-.restaurant .restaurant__card .far:hover + .fas {
-  display: block;
 }
 .restaurant .restaurant__card .fas {
   font-size: 20px;
@@ -390,6 +390,9 @@ footer ul a .fas {
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
+.menu__section li:hover .menu__order-01 {
+  transform: translate(-90px, 0);
+}
 .menu__section li:hover .menu-section-ul__priceBox {
   transform: translate(-65px, 0);
 }
@@ -482,9 +485,6 @@ footer ul a .fas {
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
   transition: transform 330ms ease-in-out;
-}
-.menu__section .menu__order-01:hover {
-  transform: translate(-90px, 0);
 }
 .menu__section .menu__order-01 .fa-check-circle {
   margin: auto;

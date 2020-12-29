@@ -251,21 +251,26 @@ header {
             margin: 8px 16px 0 16px;
         }
 
+        .heartBox {
+            &:hover .far {
+                opacity: 0;
+            }
+
+            &:hover .fas{
+                display: block;
+            }
+        }
+
         .far {
             font-size: 20px;
             position: absolute;
             right: 16px;
             bottom: 45px;
 
-            &:hover {
-                opacity: 0;
-            }
 
-            &:hover + .fas{
-                display: block;
-            }
+
         }
-
+        
         .fas {
             font-size: 20px;
             position: absolute;
@@ -275,7 +280,7 @@ header {
             background: -webkit-linear-gradient(175deg, $secondaryColor, $primaryColor);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradient 400ms ease ;
+            animation: gradient 400ms ease;
         }
 
         @keyframes gradient {
@@ -446,6 +451,10 @@ footer {
         -o-animation: fadeIn ease 2s;
         -ms-animation: fadeIn ease 2s;
 
+        &:hover .menu__order-01{
+            transform: translate(-90px, 0);
+        }
+
         &:hover .menu-section-ul__priceBox{
             transform: translate(-65px, 0);
         }
@@ -453,6 +462,8 @@ footer {
         &:hover .fa-check-circle {
             transform: rotate(0deg);
         }
+
+
 
         @keyframes fadeIn {
             0% {opacity:0;
@@ -537,9 +548,6 @@ footer {
         border-radius: 0px 20px 20px 0px;
         transition: transform 330ms ease-in-out;
 
-        &:hover {
-            transform: translate(-90px, 0);
-        }
 
         .fa-check-circle {
             margin: auto;
