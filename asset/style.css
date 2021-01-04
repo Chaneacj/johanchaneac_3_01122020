@@ -134,6 +134,9 @@ header figure {
   color: #353535;
   padding-right: 18px;
 }
+.location p {
+  display: none;
+}
 
 .instruction__item {
   display: flex;
