@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
-/*--------- INDEX ---------*/
+/*----------------- BASE -----------------*/
 html {
   height: 100%;
 }
@@ -27,7 +27,7 @@ a:active {
 }
 
 button {
-  width: 75%;
+  width: 80%;
   font-weight: 400;
   font-size: 1em;
   padding: 15px 0px 16px 0px;
@@ -62,6 +62,7 @@ section {
   margin: 50px auto 69px auto;
 }
 
+/*----------------- INDEX -----------------*/
 header {
   position: relative;
   display: flex;
@@ -327,7 +328,7 @@ footer ul a .fas {
   margin-right: 3%;
 }
 
-/*--------- menu ---------*/
+/*----------------- MENU -----------------*/
 .menu__header {
   width: 100%;
   margin: 0;
@@ -391,10 +392,10 @@ footer ul a .fas {
   -ms-animation: fadeIn ease 2s;
 }
 .menu__section li:hover .menu__order {
-  transform: translate(-90px, 0);
+  transform: translate(-67px, 0);
 }
 .menu__section li:hover .menu-section-ul__priceBox {
-  transform: translate(-65px, 0);
+  transform: translate(-45px, 0);
 }
 .menu__section li:hover .fa-check-circle {
   transform: rotate(0deg);
@@ -476,15 +477,19 @@ footer ul a .fas {
   animation-fill-mode: both;
   animation-delay: 0.4s;
 }
+.menu__section .fadeinDelay__4 {
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
 .menu__section .menu__order {
   display: flex;
   position: absolute;
-  width: 90px;
+  width: 67px;
   height: 75px;
   background-color: #99E2D0;
   float: right;
   top: 0px;
-  right: -90px;
+  right: -67px;
   flex-direction: column;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
@@ -512,13 +517,15 @@ footer ul a .fas {
 .menu__section .menu-section-ul__priceBox .menu-section-ul__price {
   font-weight: 700;
   position: absolute;
-  top: 34px;
+  top: 35px;
 }
 .menu__section button {
   display: block;
   margin: 50px auto 0 auto;
+  width: 55%;
 }
 
+/*----------------- RESPONSIVE -----------------*/
 @media only screen and (min-width: 640px) {
   .location__quote button {
     width: 46%;
@@ -600,6 +607,7 @@ footer ul a .fas {
     float: right;
   }
 }
+/*----------------- LOAD -----------------*/
 @keyframes hideSpinner {
   0% {
     opacity: 1;
